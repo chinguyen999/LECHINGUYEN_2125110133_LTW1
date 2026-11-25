@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 1</title>
     <style>
-        /* ===== Reset + Menu ===== */
         * {
             margin: 0;
             padding: 0;
@@ -34,7 +33,6 @@
             background: #084298;
         }
 
-        /* ===== s1: danh sách môn học ===== */
         body {
             padding: 20px;
         }
@@ -67,7 +65,6 @@
             transform: translateX(5px);
         }
 
-        /* ===== s2: danh sách sinh viên ===== */
         .s2 {
             max-width: 700px;
             margin: 20px auto;
@@ -101,7 +98,6 @@
             background: #cfe2ff;
         }
 
-        /* ===== s3: form đăng ký ===== */
         .s3 {
             max-width: 600px;
             margin: 20px auto;
@@ -152,7 +148,6 @@
 <body>
 
     <?php
-    // Khởi tạo mảng menu
     $menus = [
         "Trang chủ",
         "Tin tức",
@@ -160,7 +155,6 @@
         "Giới thiệu"
     ];
 
-    // Khởi tạo mảng môn học
     $subjects = [
         "HTML",
         "CSS",
@@ -169,7 +163,6 @@
         "MySQL"
     ];
 
-    // Khởi tạo mảng chứa danh sách sinh viên
     $students = [
         [
             "id" => "SV001",
@@ -197,7 +190,6 @@
         ]
     ];
 
-    // Khởi tạo các mảng cho Form
     $faculties = [
         "Công nghệ thông tin",
         "Quản trị kinh doanh",
@@ -231,7 +223,6 @@
         </ul>
     </nav>
 
-    <!-- ===== Danh sách môn học ===== -->
     <section class="s1">
         <h3>Danh sách ngôn ngữ sử dụng trong môn học</h3>
         <ul>
@@ -245,7 +236,6 @@
         <p>Tổng số môn học: <?= count($subjects) ?></p>
     </section>
 
-    <!-- ===== Danh sách sinh viên ===== -->
     <section class="s2">
         <h3>Danh sách sinh viên</h3>
         <table>
@@ -268,7 +258,6 @@
         </table>
     </section>
 
-    <!-- ===== Form đăng ký ===== -->
     <section class="s3">
         <h3>ĐĂNG KÝ THÔNG TIN SINH VIÊN</h3>
         <form action="#" method="post">
